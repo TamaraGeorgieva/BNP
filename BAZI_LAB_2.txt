@@ -1,0 +1,33 @@
+σName='Sci-Fi'(Genres)
+πGenre_ID(σName='Sci-Fi'(Genres))
+
+1. πTitle(σName='Sci-Fi'(Genres)⨝Movies)
+
+
+πMovie_ID(σRuntime>150∨Budget>200000000(Movies))
+πFirstname,Lastname(πMovie_ID(σRuntime>150∨Budget>200000000(Movies))⨝Persons)
+
+2. πFirstname,Lastname(πMovie_ID(σRuntime>150∨Budget>200000000(Movies))⨝PersonsMovies⨝Persons)
+
+
+3. πTitle(σFirstname='James'∧Lastname='Cameron'(σRuntime<120∨Runtime>180(Movies)⨝PersonsMovies⨝Persons))
+
+
+4.πTitle(σName='Action'∨SequelOf!=null(Genres⨝Movies))
+
+
+5. σName='Action'(Genres)⨝Movies⨝σSequelOf>1(Movies)
+или
+σName='Action'(Genres)⨝Movies⨝σSequelOf≠null(Movies)
+
+
+6. πTitle(σSequelOf=null(Movies))
+
+7) Најди ги сите личности кои учествувале на филмови направени од Universal Studios од жанрот Action.
+
+πFirstname,Lastname(σName='Action'∧Distribution='20th Century Fox'(Genres⨝Movies⨝Persons))
+
+
+8) Најди ги сите личности кои не учествувале на филмови направени од 20th Century Fox.
+
+πFirstname,Lastname(σDistribution≠'20th Century Fox'(Movies⨝PersonsMovies⨝Persons))
