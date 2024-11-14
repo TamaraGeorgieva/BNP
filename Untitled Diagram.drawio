@@ -35,9 +35,6 @@
         <mxCell id="x4Ep533CrrcRFyb9f4VT-8" value="IZLOZBA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="365" y="760" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="x4Ep533CrrcRFyb9f4VT-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="180" y="250" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="x4Ep533CrrcRFyb9f4VT-21" value="" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="x4Ep533CrrcRFyb9f4VT-17" target="x4Ep533CrrcRFyb9f4VT-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
